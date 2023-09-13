@@ -1,0 +1,143 @@
+{% extends 'base.html' %}
+
+{% block title %} Department of General Surgery {% endblock %}
+
+{% block content %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="text-center pt-5">
+    <h1 style="font-weight: bolder;" class="m">
+      Shoulder
+    </h1>
+  </div>
+
+  <div class="text-center pt-5">
+    <h1 style="font-weight: bolder;" class="m">
+        Department of General Surgery
+    </h1>
+  </div>
+  <hr class="mx-auto mb-5" style="width: 70%;">
+
+
+
+  <section>
+    <div>
+      <div class="container ">
+        <div class=" row d-flex p-5">
+          <div class="col-lg-6 col-sm-12 text-left">
+            <h1 class="text-info" style="font-weight: bolder;"> Dr. Simon Gabriel</h1>
+            <!-- <hr class="mx-auto" style="width: 100%;"> -->
+            <p class="pt-5 text-left" style="font-size:medium">Dr. Simon  Gabriel  is a consultant general surgeon at Sunrise Hospitality, a chain of hospitals in Kerala1. He specializes in performing laparoscopic and endoscopic surgeries for various conditions affecting the abdominal organs, breast, thyroid gland and hernias. He has over 9 years of experience in general surgery and has been trained in reputed institutions in India and abroad. He is also a member of various professional societies such as ASI, IAGES and AMASI</p>
+            <!-- <hr class="mx-auto" style="width: 100%;"> -->
+          </div>
+          <div class="col-lg-6 col-sm-12 pt-3">
+            <img class="rounded" src="{%static 'fordoc\simon.webp'%}" style="width: 100%;" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div>
+      <div class="container ">
+        <div class=" row d-flex pt-5">
+          <div class="col-lg-6 col-sm-12 row text-center justify-content-center align-items-center">
+            <h2 class="text-info" style="font-weight: bolder;opacity: 50%;"> Treatments</h2>
+            <!-- <hr class="mx-auto" style="width: 100%;"> -->
+
+            <!-- <hr class="mx-auto" style="width: 100%;"> -->
+          </div>
+          <div class="col-lg-6 col-sm-12 pt-3">
+            <p class="pt-2 text-left" style="font-size:medium">
+
+                1. Appendicitis: He removes the inflamed appendix using laparoscopic surgery.
+<br>2. Hernia: He repairs the defect in the abdominal wall that causes the protrusion of organs using laparoscopic or open surgery.
+<br>3. Breast biopsy: He removes a sample of breast tissue for diagnosis using minimally invasive techniques.
+<br>4.Abdominal organs: He treats diseases and injuries of the stomach, intestines, liver, gallbladder, pancreas and spleen using laparoscopic or open surgery.
+<br>5. Breast: He performs surgeries for benign and malignant breast conditions such as fibroadenoma, cysts, abscesses and cancer using breast-conserving or mastectomy techniques.
+<br>6. Thyroid gland: He removes part or all of the thyroid gland for conditions such as goiter, nodules and cancer using endoscopic or open surgery.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div>
+      <div class="container ">
+        <div class=" row d-flex pt-5">
+          <div class="col-lg-6 col-sm-12 row text-center align-items-center">
+            <h2 class="text-info" style="font-weight: bolder;opacity: 50%;"> Experience</h2>
+            <!-- <hr class="mx-auto" style="width: 100%;"> -->
+
+            <!-- <hr class="mx-auto" style="width: 100%;"> -->
+          </div>
+          <div class="col-lg-6 col-sm-12 pt-3">
+            <p class="pt-5 text-left" style="font-size:medium">Dr. Simon Gabriel has been working as a consultant general surgeon at Sunrise Hospitality for more than 5 years. He has performed over 1000 laparoscopic and endoscopic surgeries for various general surgical conditions. He has also been involved in teaching and training junior doctors and nurses in the department. He has attended and presented at many national and international conferences and workshops on general surgery. He has also published several papers and articles in reputed journals and magazines. He is a respected and trusted surgeon in his field.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section>
+    <div>
+      <div class="container ">
+        <div class=" row d-flex pt-5">
+          <div class="col-lg-6 col-sm-12 row text-center justify-content-center align-items-center">
+            <h2 class="text-info" style="font-weight: bolder;opacity: 50%;"> Awards</h2>
+            <!-- <hr class="mx-auto" style="width: 100%;"> -->
+
+            <!-- <hr class="mx-auto" style="width: 100%;"> -->
+          </div>
+          <div class="col-lg-6 col-sm-12 pt-3">
+            <p class="pt-2 text-left" style="font-size:medium">1. Herbert J. Proctor Award for Excellence in Surgical Research for his study on laparoscopic management of acute appendicitis.
+                <br>
+                <br>2. Keith Amos Award for his contribution to breast surgery and cancer care1.
+                <br>
+                <br>3. In-Service Award for his outstanding performance in the American Board of Surgery In-Training Examination1.
+                <br>
+                <br>4. Joe Messick, MD, Memorial Award for his leadership and professionalism in general surgery1.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="row text-center p-5">
+      <div class="col-lg-0 col-sm-12 ">
+        <h1>
+          <button class="btn bg-info "><a href="{% url 'booking' %}" style="text-decoration: none;"
+              class="text-light">Make An Appointment</a></button>
+        </h1>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+{% endblock %}

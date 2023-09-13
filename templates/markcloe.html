@@ -1,0 +1,164 @@
+{% extends 'base.html' %}
+
+{% block title %} Shoulder and Upper Limb Surgery {% endblock %}
+
+{% block content %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="text-center pt-5">
+    <h1 style="font-weight: bolder;" class="m">
+      Shoulder
+    </h1>
+  </div>
+
+  <div class="text-center pt-5">
+    <h1 style="font-weight: bolder;" class="m">
+      Shoulder and Upper Limb Surgery
+    </h1>
+  </div>
+  <hr class="mx-auto mb-5" style="width: 70%;">
+
+
+
+  <section>
+    <div>
+      <div class="container ">
+        <div class=" row d-flex p-5">
+          <div class="col-lg-6 col-sm-12 text-left">
+            <h1 class="text-info" style="font-weight: bolder;"> Dr. Mark Cloe</h1>
+            <!-- <hr class="mx-auto" style="width: 100%;"> -->
+            <p class="pt-5 text-left" style="font-size:medium">Dr. Mark Cloe is a renowned shoulder and upper limb
+              surgeon based in London. He has extensive experience and knowledge in treating various injuries and
+              conditions affecting the shoulder, elbow, wrist and hand. He is skilled in performing arthroscopic,
+              reconstructive and prosthetic surgery, as well as microsurgery and tissue engineering. He is also an
+              innovator in the field of bionic devices that can enhance nerve function and movement. He is passionate
+              about helping his patients recover and improve their quality of life. He is a compassionate and dedicated
+              doctor who always strives for excellence.</p>
+            <!-- <hr class="mx-auto" style="width: 100%;"> -->
+          </div>
+          <div class="col-lg-6 col-sm-12 pt-3">
+            <img class="rounded" src="{%static 'fordoc\mark cloe.jpg'%}" style="width: 100%;" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div>
+      <div class="container ">
+        <div class=" row d-flex pt-5">
+          <div class="col-lg-6 col-sm-12 row text-center justify-content-center align-items-center">
+            <h2 class="text-info" style="font-weight: bolder;opacity: 50%;"> Treatments</h2>
+            <!-- <hr class="mx-auto" style="width: 100%;"> -->
+
+            <!-- <hr class="mx-auto" style="width: 100%;"> -->
+          </div>
+          <div class="col-lg-6 col-sm-12 pt-3">
+            <p class="pt-2 text-left" style="font-size:medium"><br>
+
+              <br>Arthroscopic surgery for repairing damaged cartilage, ligaments, tendons and bones in the knee and
+              shoulder joints.
+              <br>
+              <br>Joint replacement surgery for replacing worn-out or diseased knee and shoulder joints with artificial
+              implants.
+              <br>
+              <br>Amputation surgery for removing a part of an arm or leg that is severely damaged or infected by cancer
+              or other diseases.
+              <br>
+              <br>Rehabilitation and physiotherapy for restoring function, mobility and strength after surgery or
+              injury.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div>
+      <div class="container ">
+        <div class=" row d-flex pt-5">
+          <div class="col-lg-6 col-sm-12 row text-center align-items-center">
+            <h2 class="text-info" style="font-weight: bolder;opacity: 50%;"> Experience</h2>
+            <!-- <hr class="mx-auto" style="width: 100%;"> -->
+
+            <!-- <hr class="mx-auto" style="width: 100%;"> -->
+          </div>
+          <div class="col-lg-6 col-sm-12 pt-3">
+            <p class="pt-5 text-left" style="font-size:medium">Dr.Mark Cloe has performed thousands of surgeries on
+              patients with various shoulder and upper limb problems, such as fractures, dislocations, arthritis,
+              rotator cuff tears, nerve injuries, infections, tumors and congenital deformities. He is proficient in
+              using the latest techniques and technologies, such as arthroscopy, joint replacement, bone grafting, nerve
+              repair, tendon transfer and muscle flap. He is also one of the pioneers in developing and applying bionic
+              devices that can stimulate the nerves and restore some function and sensation to the paralyzed limbs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section>
+    <div>
+      <div class="container ">
+        <div class=" row d-flex pt-5">
+          <div class="col-lg-6 col-sm-12 row text-center justify-content-center align-items-center">
+            <h2 class="text-info" style="font-weight: bolder;opacity: 50%;"> Awards</h2>
+            <!-- <hr class="mx-auto" style="width: 100%;"> -->
+
+            <!-- <hr class="mx-auto" style="width: 100%;"> -->
+          </div>
+          <div class="col-lg-6 col-sm-12 pt-3">
+            <p class="pt-2 text-left" style="font-size:medium">He is affiliated with UM Upper Chesapeake Health and
+              accepts new patients and telehealth appointments. He has received the following awards for his outstanding
+              work in the field of upper limb surgery:
+              <br>
+
+              <br> 1. Board of Directors Award for being a member of the board of directors of Wrightington Hospital for
+              five years.
+              <br>
+              <br> 2. Liverpool Upper Limb Unit Award for his continuous evaluation of the service and involvement in
+              clinical research.
+              <br>
+              <br>3. PR Training Program Award for showing exceptional performance in the PR training program.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="row text-center p-5">
+      <div class="col-lg-0 col-sm-12 ">
+        <h1>
+          <button class="btn bg-info "><a href="{% url 'booking' %}" style="text-decoration: none;"
+              class="text-light">Make An Appointment</a></button>
+        </h1>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+{% endblock %}

@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% block title %}  Our Doctors {% endblock %}
+
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+<div class="text-center pt-5">
+  <h1 style="font-weight: bolder;">
+    Our Doctors
+  </h1>
+</div>
+  
+<div class="text-center pt-5">
+  <h1 style="font-weight: bolder;">
+    Our Doctors
+  </h1>
+</div>
+<hr class="mx-auto mb-5" style="width: 70%;">
+
+
+
+<div class="pt-5">
+  {% for d in doctors %}
+  <div style="justify-content: space-between;" class="row row-cols-1 col-lg-4 g-4 pb-5 mb-5 ms-3 ">
+    <div style="height: 35em;" class="card bg-light pb-5">
+      <div class="pt-0px">
+        <h4 style="font-weight: bolder;" class="text-dark">
+          {{d.dep_name}}
+        </h4>
+      </div>
+      <img style="height: 250px;" src="{{d.doc_image.url}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 style="font-weight: bold;" class="card-title text-info">{{d.doc_name}}</h4>
+        <h5 class="subtitle text-dark">{{d.doc_spec}}</h5>
+        <hr style="width: 100%;">
+        <div style="justify-content: space-between; display: flex;">
+          <h5>
+            <a  href="{% url 'booking' %}"style="text-decoration: none;">Make An Appointment</a>
+          </h5>
+          {% if d.doc_name == "Dr. Mark Cloe"%}
+            <h5>
+              <a href="{% url 'markcloe' %}" style="text-decoration: none;">About</a>
+            </h5>
+          {% endif %}
+          {% if d.doc_name == "Dr. Afreen Zain"%}
+            <h5>
+              <a href="{% url 'afreen' %}" style="text-decoration: none;">About</a>
+            </h5>
+          {% endif %}
+          {% if d.doc_name == "Dr. Simon Gabriel"%}
+            <h5>
+              <a href="{% url 'simon' %}" style="text-decoration: none;">About</a>
+            </h5>
+          {% endif %}
+          {% if d.doc_name == "Dr. Clara Dzousa"%}
+          <h5>
+            <a href="{% url 'clara' %}" style="text-decoration: none;">About</a>
+          </h5>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  {% endfor %}
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+{% endblock %}

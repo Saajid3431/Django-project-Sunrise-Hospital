@@ -1,0 +1,136 @@
+{% extends 'base.html' %}
+
+{% block title %} Sunrise Assisted Reproduction centre (IVF) {% endblock %}
+
+{% block content %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="text-center pt-5">
+    <h1 style="font-weight: bolder;" class="m">
+      Shoulder
+    </h1>
+  </div>
+
+  <div class="text-center pt-5">
+    <h1 style="font-weight: bolder;" class="m">
+        Sunrise Assisted Reproduction centre (IVF)
+    </h1>
+  </div>
+  <hr class="mx-auto mb-5" style="width: 70%;">
+
+
+
+  <section>
+    <div>
+      <div class="container ">
+        <div class=" row d-flex p-5">
+          <div class="col-lg-6 col-sm-12 text-left">
+            <h1 class="text-info" style="font-weight: bolder;"> Dr. Clara Dzousa</h1>
+            <!-- <hr class="mx-auto" style="width: 100%;"> -->
+            <p class="pt-5 text-left" style="font-size:medium">Dr. Clara Dzousa has a degree in medicine and a certification by the Indian Society for Assisted Reproduction (ISAR)2. She has over 10 years of experience in providing in vitro fertilization (IVF) and other assisted reproductive techniques (ART) to couples who are facing infertility issues. She is known for her compassionate and personalized care, as well as her high success rates in helping her patients achieve their dream of parenthood.</p>
+            <!-- <hr class="mx-auto" style="width: 100%;"> -->
+          </div>
+          <div class="col-lg-6 col-sm-12 pt-3">
+            <img class="rounded" src="{%static 'fordoc\clara.jpg'%}" style="width: 100%;" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div>
+      <div class="container ">
+        <div class=" row d-flex pt-5">
+          <div class="col-lg-6 col-sm-12 row text-center justify-content-center align-items-center">
+            <h2 class="text-info" style="font-weight: bolder;opacity: 50%;"> Treatments</h2>
+            <!-- <hr class="mx-auto" style="width: 100%;"> -->
+
+            <!-- <hr class="mx-auto" style="width: 100%;"> -->
+          </div>
+          <div class="col-lg-6 col-sm-12 pt-3">
+            <p class="pt-2 text-left" style="font-size:medium">
+
+                Dr. Clara Dzousa provides advanced fertility treatments such as IVF, IUI, ICSI and test tube baby to help couples overcome infertility problems1. She performs various examinations to diagnose the cause of infertility and to select the best treatment option for each case2. She also offers psychological counseling and genetic testing to support her patients throughout the process.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div>
+      <div class="container ">
+        <div class=" row d-flex pt-5">
+          <div class="col-lg-6 col-sm-12 row text-center align-items-center">
+            <h2 class="text-info" style="font-weight: bolder;opacity: 50%;"> Experience</h2>
+            <!-- <hr class="mx-auto" style="width: 100%;"> -->
+
+            <!-- <hr class="mx-auto" style="width: 100%;"> -->
+          </div>
+          <div class="col-lg-6 col-sm-12 pt-3">
+            <p class="pt-5 text-left" style="font-size:medium">Dr. Clara Dzousa has been working as a reproduction specialist (IVF) for over 6 years at Sunrise Hospital. She has performed hundreds of IVF procedures to help couples conceive a child using their own or donated eggs and sperm2. She has also used advanced techniques such as ICSI, PGD, laser assisted hatching and TESA to improve the chances of pregnancy and prevent genetic disorders3. She has helped many couples achieve their dream of parenthood and has delivered over 167 IVF babies so far.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section>
+    <div>
+      <div class="container ">
+        <div class=" row d-flex pt-5">
+          <div class="col-lg-6 col-sm-12 row text-center justify-content-center align-items-center">
+            <h2 class="text-info" style="font-weight: bolder;opacity: 50%;"> Awards</h2>
+            <!-- <hr class="mx-auto" style="width: 100%;"> -->
+
+            <!-- <hr class="mx-auto" style="width: 100%;"> -->
+          </div>
+          <div class="col-lg-6 col-sm-12 pt-3">
+            <p class="pt-2 text-left" style="font-size:medium">1. ICMR Award for outstanding contributions in assisted reproductive technology, reproductive biology and endocrinology and reproductive health in general.
+                <br>
+                <br>2. Sir Ganga Ram Hospital Award for best performance in IVF and human reproduction.
+                <br>
+                <br>3. Motherhood Award for introducing embryo monitoring system Denmark technology first time in Kerala
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="row text-center p-5">
+      <div class="col-lg-0 col-sm-12 ">
+        <h1>
+          <button class="btn bg-info "><a href="{% url 'booking' %}" style="text-decoration: none;"
+              class="text-light">Make An Appointment</a></button>
+        </h1>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+{% endblock %}

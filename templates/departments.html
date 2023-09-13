@@ -1,0 +1,85 @@
+{% extends 'base.html'%}
+
+{% block title %}
+Our Departments
+{% endblock%}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+
+</body>
+<div class="  pt-4">
+  <h1 style="font-weight: bolder;">
+    Make An Appointment
+  </h1>
+</div>
+<div class="text-center pt-5">
+  <h1 style="font-weight: bolder;" class="m">
+    Our Departments
+  </h1>
+</div>
+<hr class="mx-auto" style="width: 70%;">
+
+
+<!-- 
+  {% for a in departments %}
+  <div class="card text-center" ">
+    <div class="card-body">
+      <h5 class="card-title">{{a.dep_name}}</h5>
+      <p class="card-text">{{a.dep_description}}</p>
+      {% endfor %}
+      <a href="{% url 'booking' %}" class="">Make An Appointment</a>
+    </div>
+  </div> -->
+
+
+
+{% for a in departments %}
+
+
+
+<section>
+  <div class="row ">
+    <div class="col-lg-10 col-sm-12 align-items-center mx-auto">
+      <div class="text-center align-items-center text m-5 border border-info">
+        <div class="card-body m-3">
+          <h3 class="card-title text-info pb-5">{{a.dep_name}}</h3>
+          <p class="card-text">{{a.dep_description}}</p>
+          {% if a.dep_name == "Shoulder and Upper Limb Surgery"%}
+          <h2><button  class="btn bg-info"><a href="{% url 'markcloe' %}" class="text-light" style="text-decoration: none; margin-bottom: 1px;"> Available Doctor</a></button></h2>
+          {% endif %}
+          {% if a.dep_name == "Sunrise Assisted Reproduction centre (IVF)"%}
+          <h2><button  class="btn bg-info"><a href="{% url 'clara' %}" class="text-light" style="text-decoration: none; margin-bottom: 1px;"> Available Doctor</a></button></h2>
+          {% endif %}
+          {% if a.dep_name == "Gynaecology, Obstetrics and Infertility"%}
+          <h2><button  class="btn bg-info"><a href="{% url 'afreen' %}" class="text-light" style="text-decoration: none; margin-bottom: 1px;">Available Doctor</a></button></h2>
+          {% endif %}
+          {% if a.dep_name == "Department of General Surgery"%}
+          <h2><button  class="btn bg-info"><a href="{% url 'simon' %}" class="text-light" style="text-decoration: none; margin-bottom: 1px;">Available Doctor</a></button></h2>
+          {% endif %}
+        </div>
+        </div>
+      </div>
+    </div>
+</section>
+{% endfor %}
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</body>
+{% endblock%}

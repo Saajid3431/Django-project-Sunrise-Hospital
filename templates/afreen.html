@@ -1,0 +1,138 @@
+{% extends 'base.html' %}
+
+{% block title %} Gynaecology, Obstetrics and Infertility {% endblock %}
+
+{% block content %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="text-center pt-5">
+    <h1 style="font-weight: bolder;" class="m">
+      Shoulder
+    </h1>
+  </div>
+
+  <div class="text-center pt-5">
+    <h1 style="font-weight: bolder;" class="m">
+        Gynaecology, Obstetrics and Infertility
+    </h1>
+  </div>
+  <hr class="mx-auto mb-5" style="width: 70%;">
+
+
+
+  <section>
+    <div>
+      <div class="container ">
+        <div class=" row d-flex p-5">
+          <div class="col-lg-6 col-sm-12 text-left">
+            <h1 class="text-info" style="font-weight: bolder;"> Dr. Afreen Zain </h1>
+            <!-- <hr class="mx-auto" style="width: 100%;"> -->
+            <p class="pt-5 text-left" style="font-size:medium">Dr. Afreen Zain is a senior consultant in Gynaecology, Obstetrics and Infertility at Sunrise Hospital. She has a MBBS, MD and DNB degree in Obstetrics and Gynaecology1. She has over 8 years of experience in treating various women’s health issues such as menstrual disorders, fibroids, endometriosis, PCOS, infertility, high-risk pregnancy and more1. She is an expert in performing minimally invasive surgeries such as laparoscopy, hysteroscopy and cystoscopy. She is also a member of various professional associations such as FOGSI, IMA and ISAR.</p>
+            <!-- <hr class="mx-auto" style="width: 100%;"> -->
+          </div>
+          <div class="col-lg-6 col-sm-12 pt-3">
+            <img class="rounded" src="{%static 'fordoc\afreen zain.jpg'%}" style="width: 100%;" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div>
+      <div class="container ">
+        <div class=" row d-flex pt-5">
+          <div class="col-lg-6 col-sm-12 row text-center justify-content-center align-items-center">
+            <h2 class="text-info" style="font-weight: bolder;opacity: 50%;"> Treatments</h2>
+          </div>
+          <div class="col-lg-6 col-sm-12 pt-3">
+            <p class="pt-2 text-left" style="font-size:medium">
+
+                Menstrual disorders: She treats abnormal bleeding, pain, irregular cycles and other menstrual problems using medication, hormonal therapy or surgery.
+                <br>
+<br>Fibroids: She removes benign tumors in the uterus using laparoscopic or hysteroscopic surgery.
+Endometriosis: She treats the condition where the tissue that lines the uterus grows outside it using medication, hormonal therapy or surgery.
+<br>PCOS: She manages the hormonal imbalance that causes irregular periods, acne, excess hair growth and infertility using medication, lifestyle changes or surgery.
+<br>Infertility: She evaluates and treats the causes of infertility in both male and female partners using ovulation induction, intrauterine insemination, in vitro fertilization, intracytoplasmic sperm injection, preimplantation genetic diagnosis and other assisted reproductive techniques.
+<br>High-risk pregnancy: She monitors and cares for pregnant women who have medical or obstetric complications such as diabetes, hypertension, preterm labor, multiple pregnancy, etc. using ultrasound, fetal monitoring, medication and delivery methods.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div>
+      <div class="container ">
+        <div class=" row d-flex pt-5">
+          <div class="col-lg-6 col-sm-12 row text-center align-items-center">
+            <h2 class="text-info" style="font-weight: bolder;opacity: 50%;"> Experience</h2>
+            <!-- <hr class="mx-auto" style="width: 100%;"> -->
+
+            <!-- <hr class="mx-auto" style="width: 100%;"> -->
+          </div>
+          <div class="col-lg-6 col-sm-12 pt-3">
+            <p class="pt-5 text-left" style="font-size:medium">Dr. Afreen Zain has been working as a senior consultant in Gynaecology, Obstetrics and Infertility for more than 7 years. She has handled many complex and challenging cases of women’s health problems with high success rates. She has performed hundreds of minimally invasive surgeries using the latest technology and equipment. She has also helped many couples achieve their dream of parenthood through various infertility treatments. She has published several papers and articles in reputed journals and magazines. She has also attended and presented at many national and international conferences and workshops. She is a respected and trusted doctor in her field.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section>
+    <div>
+      <div class="container ">
+        <div class=" row d-flex pt-5">
+          <div class="col-lg-6 col-sm-12 row text-center justify-content-center align-items-center">
+            <h2 class="text-info" style="font-weight: bolder;opacity: 50%;"> Awards</h2>
+            <!-- <hr class="mx-auto" style="width: 100%;"> -->
+
+            <!-- <hr class="mx-auto" style="width: 100%;"> -->
+          </div>
+          <div class="col-lg-6 col-sm-12 pt-3">
+            <p class="pt-2 text-left" style="font-size:medium">1. UGC Award for her project on fetal thigh circumference in estimation of birth weight by ultrasonography.
+                <br>2. Best Paper Award for her paper on prevalence of hypothyroidism in infertile women and evaluation of response of treatment for hypothyroidism on infertility.
+                <br>3. Oration Award for her presentation on management of ovarian tumors in UPCOG 2019 at Ghaziabad, UP.
+                <br>4. Short Term Studentship Award by ICMR for guiding two students on STS projects on maternal and fetal outcomes in gestational diabetes mellitus and cervical cancer screening.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="row text-center p-5">
+      <div class="col-lg-0 col-sm-12 ">
+        <h1>
+          <button class="btn bg-info "><a href="{% url 'booking' %}" style="text-decoration: none;"
+              class="text-light">Make An Appointment</a></button>
+        </h1>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+{% endblock %}

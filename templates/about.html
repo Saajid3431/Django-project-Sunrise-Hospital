@@ -1,0 +1,14 @@
+{% extends 'base.html'%}
+
+{% block title %}
+About
+{% endblock%}
+
+{% block content %}
+{% for a in about %}
+<div class="mx-auto w-50 bg-success text-center text-light p-3 my-3 border border-warning rounded">
+    <h1>{{a.dep_name}}</h1>
+    <p>{{a.dep_description}}</p>
+   </div>
+{% endfor %}
+{% endblock%} 

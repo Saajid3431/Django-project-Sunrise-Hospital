@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block title %} Make An Appointment {% endblock %}
+
+{% block content %}
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  
+</head>
+<body>
+
+    <div class="text-center pt-4">
+        <h1 style="font-weight: bolder;" class="m">
+            Make An Appointment
+        </h1>
+      </div>
+    <div class="text-center pt-5">
+        <h1 style="font-weight: bolder;" class="m">
+            Make An Appointment
+        </h1>
+      </div>
+      <hr class="mx-auto mb-5" style="width: 70%;">
+
+<div  class="container  w-50% text-center my-5 p-5">
+<form action="" method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <br>
+    <button type="submit" class="btn bg-primary ">submit</button>
+</form>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+{% endblock %}
